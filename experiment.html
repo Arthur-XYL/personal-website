@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yilong Xiong Personal Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="index.html"><img src="images/Avatar.png" /></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="experiment.html">EXPERIMENT</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1 id="hi">Hi</h1>
+      <script>
+        document.getElementById("hi").innerHTML = "Javascript now";
+      </script>
+      <style>
+        h1 {
+          color: red;
+        }
+      </style>
+      <p>
+        I have a color <span style="color: blue">blue</span> here.<br />
+        <b>This text is bold. </b><br />
+        <i>This is a italicized sentence.</i><br />
+        <strong>
+          Different than bold text, which only make the text looks thicker, the
+          strong tag implies that the sentence is significant, which is what I
+          am using now. </strong
+        ><br />
+        <em>
+          Likewise, em tag shows emphasis on a text, not just make it italicized
+          like the i tag. </em
+        ><br />
+      </p>
+      <code> The code tag is used to display computer code. </code><br />
+      <pre>
+          The pre tag preserve space and line break. 
+        </pre
+      >
+      <iframe src="https://www.bing.com" frameborder="10"></iframe><br />
+      <p>This song is called Tempest from Jesse Cook</p>
+      <audio controls src="audios/tempest.mp4" type="audio/mp4"></audio><br />
+      <h2>Listen to it if you have time</h2>
+      <br />
+      <video width="320" height="240" controls>
+        <source src="videos/Luna Llena.mp4" /></video
+      ><br />
+      <strong>CANVAS STARTS</strong><br />
+      <canvas width="200" heigh="100" style="border: 1px solid #000000"></canvas
+      ><br />
+      <optgroup label="Favorite Color">
+        <option>RED</option>
+        <option>GREEN</option>
+        <option>BLUE</option>
+      </optgroup>
+
+      <section>
+        <label for="ice-cream-choice">Choose a flavor:</label>
+        <input
+          list="ice-cream-flavors"
+          id="ice-cream-choice"
+          name="ice-cream-choice"
+        />
+
+        <datalist id="ice-cream-flavors">
+          <option value="Chocolate"></option>
+          <option value="Coconut"></option>
+          <option value="Mint"></option>
+          <option value="Strawberry"></option>
+          <option value="Vanilla"></option>
+        </datalist>
+      </section>
+
+      <section>
+        <label for="cars">Choose a car:</label>
+
+        <select name="cars" id="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </section>
+      <details>
+        <summary>This is the summary tag inside detail</summary>
+        I can open and clost detail
+      </details>
+
+      <template>
+        <h1>It is hidden lol</h1>
+      </template>
+
+      <table>
+        <caption>
+          Monthly savings
+        </caption>
+        <colgroup>
+          <col style="background-color: yellow" />
+        </colgroup>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>January</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>$80</td>
+        </tr>
+      </table>
+
+      <figure>
+        <img src="images/Home-Background.png" />
+        <figcaption>a background picture</figcaption>
+      </figure>
+    </main>
+  </body>
+</html>
