@@ -6,33 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yilong Xiong Personal Website</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
   </head>
 
   <body>
     <header>
       <nav>
-        <a href="index.html"><img src="images/Avatar.png" alt = "home page icon"  /></a>
+        <a href="index.html"><img src="images/Avatar.png" /></a>
         <div class="nav-links">
           <ul>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="contact.html">CONTACT</a></li>
-            <li><a href="experiment.html">EXPERIMENT</a></li>
           </ul>
         </div>
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
       </nav>
     </header>
+    <div class="mobile-nav">
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
 
     <main>
       <h1>Contact Me</h1>
       <form class="contact-form">
         <fieldset>
-          <legend>Contact Form</legend>
+          <legend id="contact-form-border">Contact Form</legend>
           <label></label>
           <input type="text" placeholder="First Name: " />
           <input type="text" placeholder="Last Name: " /><br />
-          <input type="text" placeholder="Email: " /><br />
+          <input type="text" placeholder="Email: " />
           <input type="text" placeholder="Message Subject: " /><br />
-          <textarea rows="6" type="text" placeholder="Message: "></textarea
+          <textarea
+            rows="6"
+            cols="42"
+            type="text"
+            placeholder="Message: "
+          ></textarea
           ><br />
           <button>Send</button>
         </fieldset>

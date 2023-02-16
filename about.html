@@ -6,43 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yilong Xiong Personal Website</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
   </head>
 
   <body>
     <header>
         <nav>
-        <a href="index.html"><img src="images/Avatar.png" alt = "home page icon"  /></a>
-        <div class="nav-links">
+          <a href="index.html"><img src="images/Avatar.png" /></a>
+          <div class="nav-links">
             <ul>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <li><a href="experiment.html">EXPERIMENT</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
             </ul>
-        </div>
+          </div>
+          <button class="hamburger">
+            <div class="bar"></div>
+          </button>
         </nav>
-        <hr />
-    </header>
+      </header>
+      <div class="mobile-nav">
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
 
     <main>
         <h1>About Me</h1>
         <picture>
-            <img src="images/Portrait.jpeg" alt="an image about myself">
+            <img id="portrait" src="images/Portrait.jpeg" alt="Portrait of Myself">
         </picture>
-
+        <br>
         <section>
             <h2>Education</h2>
+            <br>
             <p>
                 University of California, San Diego
                 <br>
-                <aside>
-                    Bachelor of Science	Sep 2020 — April 2024
-                </aside>
-        
+                Bachelor of Science	Sep 2020 — April 2024
                 <br>
                 Major in Computer Science 
                 <br>
+                <br>
                 Relevant Coursework: 
-                <ol>
+                <ol class="courses">
+                    
                     <li>Software Engineering</li>
                     <li>Web Development</li>
                     <li>Operating Systems</li>
@@ -51,23 +57,26 @@
                 </ol>
             </p>
         </section>
+        <br>
         <section>
             <h2>Project</h2>
-            <div>
-                <h3>Birds of A Feather</h3>
-                <ul>
-                    <li>Designed and implemented an android application in a 6-person team using agile software development principles. </li>
-                    <li>Enabled users to put their personal information and classes into the profile to find nearby students who are taking the same classes with them through Bluetooth. </li>
-                </ul>
-            </div>  
-            <div>
-                <h3>Movie Rental App</h3>
-                <ul>
-                    <li>Designed and implemented the backend of a movie rental application. </li>
-                    <li>Basic CRUD operations and REST API</li>
-                    <li>Uses NodeJS, Express, MongoDB. </li>
-                </ul>
-            </div>  
+            <div class="container">
+                <div class="project">
+                    <h3>Birds of A Feather</h3>
+                    <ul>
+                        <li>Designed and implemented an android application in a 6-person team using agile software development principles. </li>
+                        <li>Enabled users to put their personal information and classes into the profile to find nearby students who are taking the same classes with them through Bluetooth. </li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <h3>Movie Rental App</h3>
+                    <ul>
+                        <li>Designed and implemented the backend of a movie rental application. </li>
+                        <li>Basic CRUD operations and REST API</li>
+                        <li>Uses NodeJS, Express, MongoDB. </li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
 
