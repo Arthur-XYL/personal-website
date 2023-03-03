@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="blog.js"></script>
+    <link rel="stylesheet" href="styledcrud.css" />
+    <title>Styled CRUD</title>
+  </head>
+  <body>
+    <a href="nativedialogs.html">nativedialogs</a>
+    <a href="crud.html">CRUD</a>
+    <hr />
+    <h1>List of Blog Posts</h1>
+    <ul id="item-list"></ul>
+    <button id="add-post-btn">Add Post</button>
+
+    <dialog id="blog-post">
+      <p>Your Post:</p>
+      <input type="text" id="blog-title" placeholder="Post Title: " />
+      <input type="date" id="blog-date" placeholder="Post Date: " /><br />
+      <textarea
+        id="blog-message"
+        rows="6"
+        cols="31"
+        type="text"
+        placeholder="Post Message: "
+      ></textarea>
+      <br /><br />
+      <button id="blog-post-cancel">Cancel</button>
+      <button id="blog-post-submit">Submit</button>
+    </dialog>
+
+    <dialog id="edit-blog-post">
+      <p>Your Post:</p>
+      <input type="text" id="edit-blog-title" placeholder="Post Title: " />
+      <input type="date" id="edit-blog-date" placeholder="Post Date: " /><br />
+      <textarea
+        id="edit-blog-message"
+        rows="6"
+        cols="31"
+        type="text"
+        placeholder="Post Message: "
+      ></textarea>
+      <br /><br />
+      <button id="edit-blog-post-cancel">Cancel</button>
+      <button id="edit-blog-post-submit">Submit</button>
+    </dialog>
+  </body>
+</html>

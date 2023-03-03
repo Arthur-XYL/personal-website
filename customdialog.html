@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Dialog</title>
+    <script src=node_modules/dompurify/dist/purify.min.js></script>
+    <script type="module">
+      import * as customdialog from "./customdialog.js";
+
+      const customalertbtn = document.getElementById("customalertbtn");
+      const customconfirmbtn = document.getElementById("customconfirmbtn");
+      const custompromptbtn = document.getElementById("custompromptbtn");
+
+      customalertbtn.addEventListener("click", () => {
+        customdialog.customAlert("this is a custom alert");
+        document.getElementById("custom-alert").showModal();
+      });
+
+      customconfirmbtn.addEventListener("click", () => {
+        customdialog.showConfirm();
+      });
+
+      custompromptbtn.addEventListener("click", () => {
+        customdialog.showPrompt();
+      });
+    </script>
+  </head>
+  <body>
+    <a href="nativedialogs.html">Native Dialog</a>
+    <hr />
+    <button id="customalertbtn">Custom Alert</button><br />
+    <button id="customconfirmbtn">Custom Confirm</button><br />
+    <button id="custompromptbtn">Custom Prompt</button><br />
+    <output id="customresult"></output><br />
+    
+    <dialog id="custom-alert">
+      <h2>Custom Alert</h2>
+      <p></p>
+      <button id="custom-alert-ok">OK</button>
+    </dialog>
+
+    <dialog id="custom-confirm">
+      <p>Are you sure you want to continue?</p>
+      <button id="custom-confirm-no">No</button>
+      <button id="custom-confirm-yes">Yes</button>
+    </dialog>
+
+    <dialog id="custom-prompt">
+      <p>Enter Your Response:</p>
+      <input type="text" id="promptResponse" />
+      <br /><br />
+      <button id="custom-prompt-cancel">Cancel</button>
+      <button id="custom-prompt-submit">OK</button>
+    </dialog>
+  </body>
+</html>

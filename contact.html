@@ -24,35 +24,40 @@
         </button>
       </nav>
     </header>
+
     <div class="mobile-nav">
+      <a href="index.html">HOME</a>
       <a href="about.html">ABOUT</a>
       <a href="contact.html">CONTACT</a>
     </div>
 
-    <main>
+    <main class="text-box">
       <h1>Contact Me</h1>
-      <form class="contact-form">
+      <form
+        class="contact-form"
+        action="mailto:arthur_world@outlook.com"
+        method="post"
+        enctype="text/plain"
+      >
         <fieldset>
           <legend id="contact-form-border">Contact Form</legend>
-          <label></label>
-          <input type="text" placeholder="First Name: " />
-          <input type="text" placeholder="Last Name: " /><br />
-          <input type="text" placeholder="Email: " />
-          <input type="text" placeholder="Message Subject: " /><br />
+          <input type="text" name="email" placeholder="Email: " /><br />
+          <input
+            type="text"
+            name="subject"
+            placeholder="Message Subject: "
+          /><br />
           <textarea
             rows="6"
             cols="42"
             type="text"
+            name="message"
             placeholder="Message: "
           ></textarea
           ><br />
-          <button>Send</button>
+          <input type="submit" value="Send" />
         </fieldset>
       </form>
     </main>
-
-    <!-- <footer>
-      <a href="https://www.linkedin.com/in/yilong-xiong">LinkedIn</a>
-    </footer> -->
   </body>
 </html>
